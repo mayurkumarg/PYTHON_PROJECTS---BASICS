@@ -1,3 +1,5 @@
+import numpy as np
+
 # TAKING THE INPUT FOR BOTH MATRIX, IN ROWS AND COLUMNS.
 m1_r = int(input("Enter the number of rows for both matrices: "))
 m1_c = int(input("Enter the number of columns for both matrices: "))
@@ -23,14 +25,17 @@ for i in range(1, m1_r + 1):
         ele = int(input(f"Enter the {j} element of row {i} in matrix 2: "))
         list_row_2.append(ele)
 
-print("MATRIX_1: ")
-for i in matrix_1:
-    print(i)
-print()
-print("MATRIX_2: ")
-for i in matrix_2:
-    print(i)
-print()
+# print("MATRIX_1: ")
+# for i in matrix_1:
+#     print(i)
+# print()
+# print("MATRIX_2: ")
+# for i in matrix_2:
+#     print(i)
+# print()
+print("MATRIX 1:",np.array(matrix_1),"\n") #using 'NumPy' package
+print("MATRIX 2:",np.array(matrix_2),"\n")
+
 
 while True:
     oper = input("Enter the operation (ADD = '+', SUB = '-', MUL = '*', DIV = '/'): ")
